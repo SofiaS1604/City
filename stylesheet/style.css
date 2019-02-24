@@ -106,7 +106,6 @@ header{
     position: absolute;
 }
 
-
 main{
     height: 2500px;
 }
@@ -117,7 +116,6 @@ main{
 
 .full-screen_image{
     background-size: cover;
-    /*background-image: url("../images/architecture-buildings-business-374684.jpg");*/
     background-image: url("../images/architecture-buildings-city-373965.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -131,9 +129,12 @@ main{
 
 .full-screen_text{
     position: relative;
-    width: 500px;
+    width: 550px;
     font-size: 18px;
-    margin-left: 100px;
+    margin-left: 105px;
     margin-top: 150px;
+    background: linear-gradient(45deg, rgba(230, 234, 237, 0.5) 50%,  rgba(241,245,248,0.5));
+    padding: 20px;
+    border-radius: 5px;
 
 }
