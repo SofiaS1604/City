@@ -16,13 +16,14 @@ header{
 }
 
 .logo{
-    font-size: 50px;
+     font-size: 48px;
     background: linear-gradient(45deg, #DCDCDC 25%, #D3D3D3 50%, #DCDCDC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 50px;
     display: flex;
     flex: 1;
+    align-items: center;
 }
 
 .navigation{
