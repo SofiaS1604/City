@@ -126,13 +126,14 @@ main{
     height: 100%;
     margin-top: -60px;
     position: relative;
+    overflow: hidden;
 }
 
 .full-screen_text{
-    position: absolute;
+    position: relative;
     width: 500px;
     font-size: 18px;
-    margin-left: 50px;
-    bottom: 60%;
-    right: 50%;
+    margin-left: 100px;
+    margin-top: 150px;
+
 }
