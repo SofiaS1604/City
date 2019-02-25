@@ -184,7 +184,7 @@ main{
     position: relative;
     width: 550px;
     font-size: 50px;
-    margin-top: 250px;
+    margin-top: 18%;
     /* background: linear-gradient(45deg, rgba(230, 234, 237, 0.7) 50%, rgba(241,245,248,0.7)); */
     padding: 20px;
     border-radius: 5px;
@@ -199,44 +199,70 @@ main{
     margin-top: 50px;
     margin-left: 50px;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.card_london{
+.card{
     width: 280px;
     height: 380px;
     border-radius: 5px;
-    background-image: url("../images/architecture-big-ben-bird-s-eye-view-1837591.jpg");
     background-size: cover;
     transition: all 0.9s;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.card_london{
+    background-image: url("../images/architecture-big-ben-bird-s-eye-view-1837591.jpg");
+}
+
+.card_hong-kong{
+    background-image: url("../images/architecture-boat-building-872698.jpg");
 }
 
 .card_block{
     margin-top: 330px;
     background: rgba(0,0,0,0.5);
     height: 50px;
-    transition: all 0.2s;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .card_title{
-    font-size: 21px;
+    font-size: 19px;
     margin-left: 25px;
     padding-top: 10px;
     color: white;
 }
 
 .card_title-block{
-    width: 100%;
-    height: 0;
+    width: 270px;
     position: relative;
     overflow: hidden;
-    transition: all 0.2s;
+    transition: all 0.3s;
     color: white;
+    display: none;
+    margin-left: 25px;
+    padding-top: 10px;
+    font-size: 19px;
 }
 
-.card_london:hover .card_block{
-    height: 100px;
-    margin-top: 280px;
-    transition: all 0.2s;
+.card:hover .card_block{
+    height: 90px;
+    margin-top: 290px;
+    transition: all 0.3s;
+}
+
+.card:hover .card_title-block{
+    display: block;
+    transition: all 0.3s;
+}
+
+.card:hover .card_title{
+    display: none;
+    transition: all 0.3s;
 }
 
 @media screen and (max-width: 800px){
