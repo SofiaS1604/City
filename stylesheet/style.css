@@ -16,7 +16,7 @@ header{
 }
 
 .logo{
-     font-size: 48px;
+    font-size: 48px;
     background: linear-gradient(45deg, #DCDCDC 25%, #D3D3D3 50%, #DCDCDC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -26,12 +26,64 @@ header{
     align-items: center;
 }
 
+.menu{
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 3px;
+    background: #DCDCDC;
+    cursor: pointer;
+}
+
+.menu:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #DCDCDC;
+    position: absolute;
+    top: 8px;
+}
+
+.menu:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    background: #DCDCDC;
+    top: -8px;
+}
+
+
+.active_menu:before {
+  display: none;
+}
+
+.active_menu:after {
+    top: 0;
+    transform:rotate(95deg);
+}
+
+.active_menu{
+    transform:rotate(45deg);
+}
+
+
 .navigation{
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: flex-end;
     margin-right: 25px;
+}
+
+.navigation_menu{
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 50px;
+    display: none;
 }
 
 .navigation ul{
@@ -133,8 +185,83 @@ main{
     width: 550px;
     font-size: 18px;
     margin-top: 200px;
-    background: linear-gradient(45deg, rgba(230, 234, 237, 0.5) 50%,  rgba(241,245,248,0.5));
+    background: linear-gradient(45deg, rgba(230, 234, 237, 0.7) 50%,  rgba(241,245,248,0.7));
     padding: 20px;
     border-radius: 5px;
     margin-left: 10%;
+}
+
+.cards{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.card_london{
+    width: 280px;
+    height: 380px;
+    border-radius: 5px;
+    background-image: url("../images/architecture-big-ben-bird-s-eye-view-1837591.jpg");
+    background-size: cover;
+    transition: all 0.9s;
+}
+
+.card_block{
+    margin-top: 330px;
+    background: rgba(0,0,0,0.5);
+    height: 50px;
+    transition: all 0.2s;
+}
+
+.card_title{
+    font-size: 21px;
+    margin-left: 25px;
+    padding-top: 10px;
+    color: white;
+}
+
+.card_title-block{
+    width: 100%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s;
+    color: white;
+}
+
+.card_london:hover .card_block{
+    height: 100px;
+    margin-top: 280px;
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 800px){
+    .full-screen_text{
+        display: flex;
+        justify-content: center;
+        height: 130px;
+        margin-left: 0;
+    }
+
+    .full-screen_image{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 780px){
+    .menu{
+        display: block;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .navigation_menu{
+        display: flex;
+    }
+
 }

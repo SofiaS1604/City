@@ -7,4 +7,19 @@ $(document).ready(function(){
         e.preventDefault();
 
     });
+    
+    let active = 0;
+
+    $('.menu').click(function () {
+        if(active === 1){
+            $('.menu').removeClass('active_menu');
+            active = 0;
+        }else{
+            $('.menu').addClass('active_menu');
+            active = 1;
+        }
+    });
+
+
+    
 });
