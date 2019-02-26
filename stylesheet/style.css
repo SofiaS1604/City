@@ -195,9 +195,9 @@ header{
   position: absolute;
 }
 
-main{
-  height: 2500px;
-}
+/*main{*/
+  /*height: 2500px;*/
+/*}*/
 
 .full-screen{
   height: 25%;
@@ -217,6 +217,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 250px 0;
 }
 
 .full-screen_text{
@@ -232,7 +233,7 @@ main{
 }
 
 .cards{
-  margin-top: 50px;
+  margin-top: 75px;
   display: flex;
   flex-wrap: wrap;
 
@@ -317,6 +318,82 @@ main{
   transition: all 0.3s;
 }
 
+.gallery{
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.image:nth-child(1){
+    width: 250px;
+}
+
+.image:nth-child(2){
+  width: 449px;
+}
+
+.image:nth-child(3){
+  width: 378px;
+}
+
+.image:nth-child(4){
+  width: 167px;
+}
+
+.log-in{
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.log-in form{
+    width: 450px;
+    background: rgba(1,1,1, 0.1);
+    border: 1px solid rgba(1,1,1,0.3);
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_title{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login, .password{
+  margin-bottom: 25px;
+}
+
+.login_text, .password_text{
+  margin-bottom: 5px;
+}
+
+.log-in form input{
+  width: 320px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.button{
+  font-size: 21px;
+  width: 100px;
+  margin-top: 10px;
+
+}
+
+footer{
+  background: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
 @media screen and (max-width: 1024px){
   .full-screen_text{
     font-size: 40px;
@@ -331,9 +408,57 @@ main{
       font-size: 35px;
   }
 
+
+
   .cards{
       justify-content: center;
   }
+
+  .gallery{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image{
+      width: 300px !important;
+      margin-bottom: 25px;
+  }
+
+  .log-in{
+    margin-top: 50px;
+  }
+
+  .log-in form{
+    width: 300px;
+    padding: 10px 0;
+  }
+
+  .log-in form input{
+      font-size: 14px;
+      height: 25px;
+      width: 250px;
+      padding: 0 5px;
+  }
+
+  .form_title{
+    margin-bottom: 10px;
+  }
+
+  .login, .password{
+    margin-bottom: 14px;
+  }
+
+  .button{
+    margin-top: 5px;
+  }
+
 
 }
 
