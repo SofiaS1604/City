@@ -13,9 +13,11 @@ $(document).ready(function(){
     $('.menu').click(function () {
         if(active === 1){
             $('.menu').removeClass('active_menu');
+            $('.menu_mobile').removeClass('menu_mobile-active');
             active = 0;
         }else{
             $('.menu').addClass('active_menu');
+            $('.menu_mobile').addClass('menu_mobile-active');
             active = 1;
         }
     });
