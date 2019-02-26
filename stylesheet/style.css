@@ -275,10 +275,6 @@ main{
   background-image: url("../images/lady-liberty-landmark-monument-64271.jpg");
 }
 
-.card_prague{
-  background-image: url("../images/architecture-boats-bridge-1269805.jpg");
-}
-
 .card_block{
   margin-top: 330px;
   background: rgba(0,0,0,0.8);
@@ -361,6 +357,7 @@ main{
   header{
     position: relative;
   }
+
   /*.full-screen_text{
       font-size: 38px;
       width: 70%;
