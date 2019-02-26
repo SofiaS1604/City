@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    $('.menu_item').click(function () {
+        $('.menu_mobile').removeClass('menu_mobile-active');
+        $('.menu').removeClass('active_menu');
+    })
+
     $("a").on("click", function(e){
         let anchor = $(this);
         $('html, body').stop().animate({
@@ -21,6 +26,8 @@ $(document).ready(function(){
             active = 1;
         }
     });
+
+
 
 
     

@@ -57,17 +57,18 @@ header{
 }
 
 
-.active_menu:before {
-  display: none;
+.active_menu{
+    background-color: transparent;
 }
 
 .active_menu:after {
     top: 0;
-    transform:rotate(95deg);
+    transform:rotate(135deg);
 }
 
-.active_menu{
-    transform:rotate(45deg);
+.active_menu:before{
+    transform:rotate(-135deg);
+    top: 0;
 }
 
 .menu_mobile{
@@ -91,7 +92,6 @@ header{
     display: flex;
     justify-content: center;
     margin-right: 0;
-    margin-top: 125px;
 }
 
 .menu_mobile ul{
@@ -233,9 +233,16 @@ main{
 
 .cards{
     margin-top: 50px;
-    margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.card_container{
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    justify-content: center;
+    max-width: 350px;
 }
 
 .card{
@@ -244,7 +251,6 @@ main{
     border-radius: 5px;
     background-size: cover;
     transition: all 0.9s;
-    margin-right: 50px;
     margin-bottom: 50px;
 }
 
@@ -264,6 +270,7 @@ main{
     cursor: pointer;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    align-items: flex-end;
 }
 
 .card_title{
@@ -332,6 +339,9 @@ main{
         display: flex;
     }
 
+    header{
+        position: relative;
+    }
     /*.full-screen_text{
         font-size: 38px;
         width: 70%;
