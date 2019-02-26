@@ -1,365 +1,364 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Monoco, monospace;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Monoco, monospace;
+  box-sizing: border-box;
 }
 
 header{
-    height: 60px;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: rgba(39, 40, 42, 0.7);
-    display: flex;
-    flex-direction: row;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(39, 40, 42, 0.7);
+  display: flex;
+  flex-direction: row;
 }
 
 .logo{
-    font-size: 48px;
-    background: linear-gradient(45deg, #DCDCDC 25%, #D3D3D3 50%, #DCDCDC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 50px;
-    display: flex;
-    flex: 1;
-    z-index: 2;
-    align-items: center;
+  font-size: 48px;
+  background: linear-gradient(45deg, #DCDCDC 25%, #D3D3D3 50%, #DCDCDC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 50px;
+  display: flex;
+  flex: 1;
+  z-index: 2;
+  align-items: center;
 }
 
 .menu{
-    display: none;
-    position: relative;
-    width: 25px;
-    height: 3px;
-    background: #DCDCDC;
-    cursor: pointer;
+  display: none;
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background: #DCDCDC;
+  cursor: pointer;
 }
 
 .menu:after {
-    content: '';
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: #DCDCDC;
-    position: absolute;
-    top: 8px;
+  content: '';
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #DCDCDC;
+  position: absolute;
+  top: 8px;
 }
 
 .menu:before {
-    content: '';
-    display: block;
-    width: 25px;
-    height: 3px;
-    position: absolute;
-    background: #DCDCDC;
-    top: -8px;
+  content: '';
+  display: block;
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  background: #DCDCDC;
+  top: -8px;
 }
 
 
 .active_menu{
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .active_menu:after {
-    top: 0;
-    transform:rotate(135deg);
+  top: 0;
+  transform:rotate(135deg);
 }
 
 .active_menu:before{
-    transform:rotate(-135deg);
-    top: 0;
+  transform:rotate(-135deg);
+  top: 0;
 }
 
 .menu_mobile{
-    position: fixed;
-    background-color: rgba(39, 40, 42, 1);
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    justify-content: center;
-    display: none;
-    align-items: center;
-    right: -100vw;
-    transition: all 0.5s;
+  position: fixed;
+  background-color: rgba(39, 40, 42, 1);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  justify-content: center;
+  display: none;
+  align-items: center;
+  right: -100vw;
+  transition: all 0.5s;
 }
 
 .menu_mobile-active{
-    right: 0;
+  right: 0;
 }
 
 .menu_mobile .navigation{
-    display: flex;
-    justify-content: center;
-    margin-right: 0;
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
 }
 
 .menu_mobile ul{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu_mobile .navigation_link{
-    margin-right: 0;
-    margin-bottom: 20px;
+  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 
 .navigation{
-    display: flex;
-    align-items: center;
-    flex: 1;
-    justify-content: flex-end;
-    margin-right: 25px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 25px;
 }
 
 .navigation_menu{
-    align-items: center;
-    flex: 1;
-    z-index: 2;
-    justify-content: flex-end;
-    margin-right: 50px;
-    display: none;
+  align-items: center;
+  flex: 1;
+  z-index: 2;
+  justify-content: flex-end;
+  margin-right: 50px;
+  display: none;
 }
 
 .navigation ul{
-    display: flex;
-    justify-content: right;
+  display: flex;
+  justify-content: right;
 }
 
 .navigation_link{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-right: 50px;
-    align-self: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 50px;
+  align-self: center;
 }
 
 .navigation_item{
-    /*color: rgba(255, 255, 255, 0.9);*/
-    font-size: 20px;
-    color: #dcdcdc;
-    text-decoration: none;
-    transition: all 0.6s;
-    width: 85px;
-    justify-content: center;
-    position: relative;
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
+  /*color: rgba(255, 255, 255, 0.9);*/
+  font-size: 20px;
+  color: #dcdcdc;
+  text-decoration: none;
+  transition: all 0.6s;
+  width: 85px;
+  justify-content: center;
+  position: relative;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
 }
 
 .navigation_item:after{
-    content: "";
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background: #dcdcdc;
-    transition: all 0.3s;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: #dcdcdc;
+  transition: all 0.3s;
 }
 
 .navigation_item:hover:after {
-    height: 2px;
-    width: 85px;
-    background: #DCDCDC;
-    content: '';
-    left: 0;
-    display: block;
-    transition: all 0.3s;
-    position: absolute;
+  height: 2px;
+  width: 85px;
+  background: #DCDCDC;
+  content: '';
+  left: 0;
+  display: block;
+  transition: all 0.3s;
+  position: absolute;
 }
 
 .navigation_item-small{
-    width: 60px;
+  width: 60px;
 }
 
 .navigation_item:after{
-    content: "";
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background: #dcdcdc;
-    transition: all 0.3s;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: #dcdcdc;
+  transition: all 0.3s;
 }
 
 .navigation_item-small:hover:after {
-    height: 2px;
-    width: 60px;
-    background: #DCDCDC;
-    content: '';
-    left: 0;
-    display: block;
-    transition: all 0.3s;
-    position: absolute;
+  height: 2px;
+  width: 60px;
+  background: #DCDCDC;
+  content: '';
+  left: 0;
+  display: block;
+  transition: all 0.3s;
+  position: absolute;
 }
 
 main{
-    height: 2500px;
+  height: 2500px;
 }
 
 .full-screen{
-    height: 25%;
+  height: 25%;
 }
 
 .full-screen_image{
-    background-size: cover;
-    background-image: url("../images/architecture-buildings-city-373965.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: 1;
-    height: 100%;
-    margin-top: -60px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-size: cover;
+  background-image: url("../images/architecture-buildings-city-373965.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  height: 100%;
+  margin-top: -60px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .full-screen_text{
-    position: relative;
-    width: 550px;
-    font-size: 50px;
-    background: linear-gradient(45deg, rgba(230, 234, 237, 0.7) 10%, rgba(241,245,248,0.7) 80%, rgba(230, 234, 237, 0.7));
-    padding: 20px;
-    border-radius: 5px;
-    font-family: 'Old Standard TT', serif;
-    font-style: italic;
-    text-align: center;
+  position: relative;
+  width: 550px;
+  font-size: 50px;
+  background: linear-gradient(45deg, rgba(230, 234, 237, 0.7) 10%, rgba(241,245,248,0.7) 80%, rgba(230, 234, 237, 0.7));
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Old Standard TT', serif;
+  font-style: italic;
+  text-align: center;
 }
 
 .cards{
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 25px;
-    margin-right: 25px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .card_container{
-    display: flex;
-    flex: 1;
-    min-width: 300px;
-    justify-content: center;
-    max-width: 310px;
+  display: flex;
+  flex: 1;
+  min-width: 300px;
+  justify-content: center;
+  max-width: 320px;
 }
 
 .card{
-    width: 280px;
-    height: 380px;
-    border-radius: 5px;
-    background-size: cover;
-    transition: all 0.9s;
-    margin-bottom: 30px;
+  width: 280px;
+  height: 380px;
+  border-radius: 5px;
+  background-size: cover;
+  transition: all 0.9s;
+  margin-bottom: 30px;
 }
 
 .card_london{
-    background-image: url("../images/architecture-big-ben-bird-s-eye-view-1837591.jpg");
+  background-image: url("../images/architecture-big-ben-bird-s-eye-view-1837591.jpg");
 }
 
 .card_dubai{
-    background-image: url("../images/amazing-architecture-beautiful-view-1470405.jpg");
+  background-image: url("../images/amazing-architecture-beautiful-view-1470405.jpg");
 }
 
 .card_singapore{
-    background-image: url("../images/architecture-asia-attraction-358685.jpg");
+  background-image: url("../images/architecture-asia-attraction-358685.jpg");
 }
 
 .card_paris{
-    background-image: url("../images/amazing-architecture-beautiful-1461974.jpg");
+  background-image: url("../images/amazing-architecture-beautiful-1461974.jpg");
 }
 
 .card_new-york{
-    background-image: url("../images/lady-liberty-landmark-monument-64271.jpg");
+  background-image: url("../images/lady-liberty-landmark-monument-64271.jpg");
 }
 
 .card_prague{
-    background-image: url("../images/architecture-boats-bridge-1269805.jpg");
+  background-image: url("../images/architecture-boats-bridge-1269805.jpg");
 }
 
 .card_block{
-    margin-top: 330px;
-    background: rgba(0,0,0,0.8);
-    height: 50px;
-    transition: all 0.3s;
-    cursor: pointer;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    align-items: flex-end;
-    padding: 15px 25px;
+  margin-top: 330px;
+  background: rgba(0,0,0,0.8);
+  height: 50px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  align-items: flex-end;
+  padding: 15px 25px;
 }
 
 .card_title{
-    font-size: 19px;
-    color: white;
+  font-size: 19px;
+  color: white;
 }
 
 .card_title-block{
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s;
-    color: white;
-    display: none;
-    font-size: 19px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  color: white;
+  display: none;
+  font-size: 19px;
 }
 
 .card:hover .card_block{
-    height: 90px;
-    margin-top: 290px;
-    transition: all 0.3s;
+  height: 90px;
+  margin-top: 290px;
+  transition: all 0.3s;
 }
 
 .card:hover .card_title-block{
-    display: block;
-    transition: all 0.3s;
+  display: block;
+  transition: all 0.3s;
 }
 
 .card:hover .card_title{
-    display: none;
-    transition: all 0.3s;
+  display: none;
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 1024px){
-    .full-screen_text{
-        font-size: 40px;
-        width: 65%;
-    }
+  .full-screen_text{
+    font-size: 40px;
+    width: 65%;
+  }
 
 }
 
 @media (max-width: 621px) and (min-width: 320px){
-    .full-screen_text {
-        width: 80%;
-        font-size: 35px;
-    }
+  .full-screen_text {
+    width: 80%;
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 767px){
-    .menu{
-        display: block;
-    }
+  .menu{
+    display: block;
+  }
 
-    .navigation{
-        display: none;
-    }
+  .navigation{
+    display: none;
+  }
 
-    .navigation_menu{
-        display: flex;
-    }
+  .navigation_menu{
+    display: flex;
+  }
 
-    .menu_mobile{
-        display: flex;
-    }
+  .menu_mobile{
+    display: flex;
+  }
 
-    header{
-        position: relative;
-    }
-    /*.full-screen_text{
-        font-size: 38px;
-        width: 70%;
-    }*/
+  header{
+    position: relative;
+  }
+  /*.full-screen_text{
+      font-size: 38px;
+      width: 70%;
+  }*/
 
 }
