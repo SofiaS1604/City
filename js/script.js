@@ -12,7 +12,7 @@ $(document).ready(function(){
         e.preventDefault();
 
     });
-    
+
     let active = 0;
 
     $('.menu').click(function () {
@@ -30,5 +30,5 @@ $(document).ready(function(){
 
 
 
-    
+
 });
