@@ -178,20 +178,20 @@ main{
     margin-top: -60px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .full-screen_text{
     position: relative;
     width: 550px;
     font-size: 50px;
-    margin-top: 17%;
-    background: linear-gradient(45deg, rgba(230, 234, 237, 0.7) 50%, rgba(241,245,248,0.7));
+    background: linear-gradient(45deg, rgba(230, 234, 237, 0.7) 10%, rgba(241,245,248,0.7) 80%, rgba(230, 234, 237, 0.7));
     padding: 20px;
     border-radius: 5px;
     font-family: 'Old Standard TT', serif;
     font-style: italic;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
 
@@ -267,21 +267,16 @@ main{
 
 @media screen and (max-width: 800px){
     .full-screen_text{
-        display: flex;
-        justify-content: center;
-        height: 130px;
-        margin-left: 0;
+        font-size: 40px;
+        width: 350px;
     }
 
-    .full-screen_image{
-        display: flex;
-        justify-content: center;
-    }
+
 
 }
 
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 767px){
     .menu{
         display: block;
     }
