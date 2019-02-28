@@ -373,6 +373,7 @@ footer .navigation_item{
   .image{
       width: 300px !important;
       margin-bottom: 25px;
+      height: auto;
   }
 }
 
