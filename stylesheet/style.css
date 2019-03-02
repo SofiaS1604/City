@@ -317,13 +317,100 @@ header{
 
 
 .gallery{
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   margin-top: 50px;
   margin-bottom: 50px;
+  display: flex;
+}
+
+
+.images{
+  /*display: block;*/
+  display: none;
 }
 
 .image{
-    height:  300px;
+  height: 300px;
+}
+
+.slider{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.slid{
+  display: flex;
+  flex: 4;
+  justify-content: center;
+  align-items: center;
+  max-width: 1050px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+.slid_image{
+  display: flex;
+  max-width: 750px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.slid_image-center{
+  max-width: 750px;
+  max-height: 500px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.slid_image-left{
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.slid_image-right{
+  max-width: 500px;
+  max-height: 300px;
+
+}
+
+.arrow-left{
+  background-image: url("../images/angle-arrow-pointing-to-right (2).png");
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  transform: scale(-1,1);
+  display: flex;
+  justify-content: center;
+}
+
+.block-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #939a9f;
+  width: 50px;
+  height: 100px;
+}
+
+.arrow-right{
+  background-image: url("../images/angle-arrow-pointing-to-right (2).png");
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.block-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #939a9f;
+  width: 50px;
+  height: 100px;
 }
 
 footer{
@@ -374,6 +461,14 @@ footer .navigation_item{
       width: 300px !important;
       margin-bottom: 25px;
       height: auto;
+  }
+
+  .slider{
+    display: none;
+  }
+
+  .images{
+    display: flex;
   }
 }
 
