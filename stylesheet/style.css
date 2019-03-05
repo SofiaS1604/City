@@ -10,7 +10,7 @@ header{
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color: rgba(39, 40, 42, 0.7);
+  background-color: rgba(1, 1, 1, 0.7);
   display: flex;
   flex-direction: row;
   position: -webkit-sticky;
@@ -258,7 +258,7 @@ header{
 }
 
 .card_dubai{
-  background-image: url("../images/amazing-architecture-beautiful-view-1470405.jpg");
+  background-image: url("../images/amazing-architecture-beautiful-view-1470405-min.jpg");
 }
 
 .card_singapore{
@@ -315,7 +315,6 @@ header{
   transition: all 0.3s;
 }
 
-
 .gallery{
   /*margin-left: 20px;*/
   margin-top: 50px;
@@ -323,10 +322,14 @@ header{
   display: flex;
 }
 
-
 .images{
-  /*display: block;*/
-  display: none;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.image+.image{
+  margin-left: 10px;
 }
 
 .image{
@@ -343,37 +346,38 @@ header{
 .slid{
   display: flex;
   flex: 4;
-  justify-content: center;
   align-items: center;
-  max-width: 1050px;
+  max-width: 1150px;
   position: relative;
   overflow: hidden;
   margin: 0 5px;
+  height: 550px;
 }
 
 .slid_image{
-  display: flex;
-  max-width: 750px;
-  max-height: 500px;
+  position: absolute;
   object-fit: cover;
 }
 
 .slid_image-center{
   max-width: 750px;
   max-height: 500px;
-  margin-left: 5px;
-  margin-right: 5px;
+  left: 200px;
+  z-index: 1;
 }
 
 .slid_image-left{
   max-width: 500px;
   max-height: 300px;
+  left: -305px !important;
+  z-index: 0;
 }
 
 .slid_image-right{
   max-width: 500px;
   max-height: 300px;
-
+  left: 955px;
+  z-index: 0;
 }
 
 .arrow-left{
@@ -420,7 +424,7 @@ footer{
   display: flex;
   align-items: center;
   padding-left: 25px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 footer .navigation_item{
