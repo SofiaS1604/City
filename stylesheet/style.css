@@ -277,7 +277,7 @@ header{
   margin-top: 330px;
   background: rgba(0,0,0,0.8);
   height: 50px;
-  transition: all 0.3s;
+  transition: all 0.5s;
   cursor: pointer;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -299,20 +299,42 @@ header{
   font-size: 19px;
 }
 
+.ver2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ver2 .card:hover .card_block{
+    height: 90px;
+    margin-top: 290px;
+    transition: all 0.3s;
+}
+
 .card:hover .card_block{
-  height: 90px;
-  margin-top: 290px;
-  transition: all 0.3s;
+  height: 380px;
+  margin-top: 0;
+  transition: all 0.7s;
+}
+
+
+.ver2 .card:hover .card_title{
+    display: none;
+    transition: all 0.3s;
 }
 
 .card:hover .card_title-block{
   display: block;
   transition: all 0.3s;
+    font-size: 16px;
 }
 
 .card:hover .card_title{
-  display: none;
-  transition: all 0.3s;
+    display: block;
+    font-size: 25px;
+    transition: all 0.3s;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .gallery{
