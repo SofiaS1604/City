@@ -329,6 +329,10 @@ header{
     font-size: 16px;
 }
 
+.ver2 .card:hover .card_title-block{
+    font-size: 18px;
+}
+
 .card:hover .card_title{
     display: block;
     font-size: 25px;
