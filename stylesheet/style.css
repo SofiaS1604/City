@@ -483,6 +483,10 @@ footer .navigation_item{
     justify-content: center;
   }
 
+  .ver2{
+      justify-content: center;
+  }
+
   .image{
       max-width:  300px !important;
       margin-bottom: 25px;
