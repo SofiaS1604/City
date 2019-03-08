@@ -28,18 +28,24 @@ $(document).ready(function(){
 
     $('.block-right').click(function () {
         $('.slid_image-left').animate({
-            left: 200
+            left: 200,
+            maxWidth: 750,
+            maxHeight: 500
         },500);
 
         $('.slid_image-center').animate({
-            left: 955
+            left: 955,
+            maxWidth: 500,
+            maxHeight: 300
         },500);
 
         $('.slid_image-left').addClass('image_left');
         $('.slid_image-right').addClass('slid_image-left').removeClass('slid_image-right');
 
         $('.slid_image-right').animate({
-            left: 1150
+            left: 1150,
+            maxWidth: 500,
+            maxHeight: 300
         },600);
 
         $('.slid_image-center').addClass('slid_image-right').removeClass('slid_image-center');
