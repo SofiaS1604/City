@@ -16,6 +16,11 @@ header{
   position: -webkit-sticky;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 .logo{
   font-size: 48px;
   background: linear-gradient(45deg, #DCDCDC 25%, #D3D3D3 50%, #DCDCDC);
@@ -196,10 +201,6 @@ header{
   position: absolute;
 }
 
-.full-screen{
-  height: 28%;
-}
-
 .full-screen_image{
   background-size: cover;
   background-image: url("../images/architecture-buildings-city-373965.jpg");
@@ -207,14 +208,13 @@ header{
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: 1;
-  height: 100%;
   margin-top: -60px;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 215px 0;
+  height: 100vh;
 }
 
 .full-screen_text{
@@ -232,17 +232,18 @@ header{
 
 .cards{
   margin-top: 75px;
-  display: flex;
   flex-wrap: wrap;
-
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card_container{
   display: flex;
   flex: 1;
-  min-width: 300px;
-  justify-content: center;
   max-width: 320px;
+  min-width: 320px;
+  justify-content: center;
 }
 
 .card{
@@ -392,6 +393,7 @@ header{
   background-size: cover;
   width: 32px;
   height: 32px;
+  cursor: pointer;
   transform: scale(-1,1);
   display: flex;
   justify-content: center;
@@ -404,6 +406,7 @@ header{
   background: #939a9f;
   width: 50px;
   height: 100px;
+  cursor: pointer;
 }
 
 .arrow-right{
@@ -422,6 +425,7 @@ header{
   background: #939a9f;
   width: 50px;
   height: 100px;
+  cursor: pointer;
 }
 
 footer{
@@ -464,7 +468,8 @@ footer .navigation_item{
   .gallery{
     display: flex;
     justify-content: center;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .images{
@@ -472,6 +477,7 @@ footer .navigation_item{
     flex-direction: column;
     flex: none;
     flex: 1;
+    margin-left: 0;
     justify-content: center;
   }
 
@@ -517,4 +523,5 @@ footer .navigation_item{
   header{
     position: relative;
   }
+
 }
