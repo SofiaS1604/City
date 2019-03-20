@@ -26,7 +26,7 @@ $(document).ready(function(){
         }
     });
 
-    $('.block-right').click(function () {
+    $('.block-left').click(function () {
         $('.slid_image-left').animate({
             left: 200,
             maxWidth: 750,
